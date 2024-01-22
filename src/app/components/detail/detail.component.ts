@@ -11,7 +11,7 @@ import { ActivatedRoute, RouterLink } from '@angular/router';
   styleUrl: './detail.component.scss'
 })
 export class DetailComponent {
-  id!:number;
+  id!:string;
   Product!:Product;
   constructor(private servicio:ServiceService,private rutaActivada:ActivatedRoute){}
 

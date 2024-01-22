@@ -1,3 +1,4 @@
+import { Product } from './../models/product';
 import { HttpClient } from '@angular/common/http';
 
 import { Injectable } from '@angular/core';
@@ -14,7 +15,12 @@ export class ServiceService {
     return this.http.get(this.ProductsUrl)
   }
 
-  public getProductsId(id:number){
+  public getProductsId(id:string){
     return this.http.get(`${this.ProductsUrl}/${id}`)
+  }
+
+  public postProduct(Product:any){
+    return this.http.post(this.ProductsUrl,Product)
+
   }
 }
