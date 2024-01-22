@@ -1,3 +1,5 @@
+
+<main>
 <label for="">
 <input type="text" placeholder="id" [(ngModel)]="Product.id">
 <input type="text" placeholder="Nombre" [(ngModel)]="Product.name">
@@ -13,7 +15,10 @@
 <input type="text" placeholder="Estrella" [(ngModel)]="Product.stars">
 
 
-
+<div class="boton">
 <button  (click)="addProduct()">ENVIAR DATOS</button>
 <button  (click)="updateProduct()">ACTUALIZAR DATOS</button>
+</div>
+
 </label>
+</main>
