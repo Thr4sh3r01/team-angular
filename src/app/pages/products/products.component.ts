@@ -23,4 +23,4 @@ export class ProductsComponent {
       this.ProductsList=data
     })}
 
-}
+  }

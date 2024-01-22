@@ -1,6 +1,8 @@
+<div class="princiapl">
+
 @for (item of ProductsList; track $index) {
   <section>
-    <div>
+    <div class="fotos">
       <h1>{{item.name}}</h1>
       <p>{{item.id}}</p>
       <img src="{{item.image}}" alt="foto">
@@ -12,3 +14,4 @@
     </div>
   </section>
 }
+</div>
