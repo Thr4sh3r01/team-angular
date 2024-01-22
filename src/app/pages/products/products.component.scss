@@ -15,6 +15,18 @@ a {
 }
 
 .alinear {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.principal{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -25,9 +37,15 @@ a {
   flex-wrap: wrap;
   justify-content: space-around;
   width: 100%;
+
 }
 
 img {
+
+    width: 200px;
+    height: 200px;
+
+
   width: 200px;
   height: 200px;
-}
+

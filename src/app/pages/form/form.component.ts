@@ -25,6 +25,8 @@ export class FormComponent {
  addProduct(){
   this.servicio.postProduct(this.Product).subscribe();
   alert("PRODUCTO CREADO")
+  console.log(`has creado:, ${this.Product.name}`);
+
 
  }
 
