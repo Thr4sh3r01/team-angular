@@ -2,11 +2,12 @@ import { Product } from './../../models/product';
 import { Component } from '@angular/core';
 import { ServiceService } from '../../services/service.service';
 import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-form',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule,CommonModule],
   templateUrl: './form.component.html',
   styleUrl: './form.component.scss'
 })
@@ -20,9 +21,27 @@ export class FormComponent {
   stars: "",
   image: "",
   }
+  productIdToUpdate: string = ""
  addProduct(){
   this.servicio.postProduct(this.Product).subscribe();
   alert("PRODUCTO CREADO")
 
  }
+
+ updateProduct() {
+  const productId = this.Product.id
+
+  this.servicio.putProduct(productId, this.Product).subscribe(
+    () => {
+      alert("PRODUCTO ACTUALIZADO");
+    },
+    (error) => {
+      console.error('Error al actualizar el producto', error);
+    }
+  );
 }
+}
+
+
+
+

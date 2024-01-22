@@ -1,4 +1,4 @@
-import { Product } from './../models/product';
+
 import { HttpClient } from '@angular/common/http';
 
 import { Injectable } from '@angular/core';
@@ -11,7 +11,8 @@ export class ServiceService {
   public ProductsUrl:string=`${this.baseUrl}/Products`
 
   constructor(private http:HttpClient) {}
-  public getProducts(){
+  public getProducts(page:number){
+    const apiUrl = `${this.ProductsUrl}?page=${page}`;
     return this.http.get(this.ProductsUrl)
   }
 
@@ -23,4 +24,10 @@ export class ServiceService {
     return this.http.post(this.ProductsUrl,Product)
 
   }
+
+  putProduct(id: string, product: any) {
+    return this.http.put(`${this.ProductsUrl}/${id}`, product);
+  }
+
+
 }
