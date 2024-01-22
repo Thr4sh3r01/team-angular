@@ -22,6 +22,7 @@ export class FormComponent {
   }
  addProduct(){
   this.servicio.postProduct(this.Product).subscribe();
+  alert("PRODUCTO CREADO")
 
  }
 }
