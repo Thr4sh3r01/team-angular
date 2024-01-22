@@ -2,14 +2,13 @@
   @for (item of ProductsList; track $index) {
   <section>
     <div class="fotos">
-      <h1>{{ item.name }}</h1>
-      <p>{{ item.id }}</p>
       <img src="{{ item.image }}" alt="foto" />
+      <h1>{{ item.name }}</h1>
       <p>{{ item.description }}</p>
       <p>{{ item.price }}</p>
       <p>{{ item.stars }}</p>
+      <button routerLink="/form">Editar producto</button>
     </div>
-    <button routerLink="/form">Editar producto</button>
   </section>
 
   }
@@ -20,5 +19,3 @@
     <button (click)="nextPage()">Next</button>
   </div>
 </div>
-
-
