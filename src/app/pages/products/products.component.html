@@ -1,3 +1,22 @@
+
+<div class="principal">
+
+@for (item of ProductsList; track $index) {
+  <section>
+    <div class="fotos">
+      <h1>{{item.name}}</h1>
+      <p>{{item.id}}</p>
+      <img src="{{item.image}}" alt="foto">
+      <p>{{item.description}}</p>
+      <p>{{item.price}}</p>
+      <p>{{item.stars}}</p>
+
+
+    </div>
+  </section>
+
+}
+
 <div class="container">
   @for (item of ProductsList; track $index) {
   <div class="container">
@@ -12,6 +31,7 @@
   </div>
   }
 </div>
+
 
 <div>
   <button (click)="previousPage()">Previous</button>
