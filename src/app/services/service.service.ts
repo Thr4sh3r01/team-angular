@@ -13,4 +13,8 @@ export class ServiceService {
   public getProducts(){
     return this.http.get(this.ProductsUrl)
   }
+
+  public getProductsId(id:number){
+    return this.http.get(`${this.ProductsUrl}/${id}`)
+  }
 }
