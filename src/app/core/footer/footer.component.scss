@@ -1,0 +1,12 @@
+div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  gap: 35px;
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+}
