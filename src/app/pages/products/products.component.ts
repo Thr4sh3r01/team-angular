@@ -38,9 +38,6 @@ export class ProductsComponent {
     }
   }
 
-
-    }}
-
   nextPage() {
     this.paginaActual++;
     this.cargarProductos();
