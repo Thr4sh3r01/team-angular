@@ -1,6 +1,8 @@
+<div class="princiapl">
+
 @for (item of ProductsList; track $index) {
   <section>
-    <div>
+    <div class="fotos">
       <h1>{{item.name}}</h1>
       <p>{{item.id}}</p>
       <img src="{{item.image}}" alt="foto">
@@ -14,9 +16,9 @@
 
 }
 
-probadno rama8
 <div>
   <button (click)="previousPage()">Previous</button>
   <span>Page {{ paginaActual }}</span>
   <button (click)="nextPage()">Next</button>
+
 </div>

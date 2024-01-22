@@ -26,6 +26,7 @@ export class ProductsComponent {
       this.cargarProductos()
     })}
 
+
     cargarProductos() {
       this.servicio.getProducts(this.paginaActual).subscribe((data: any) => {
         console.log('Estoy recibiendo producto al paginar', data);
@@ -43,4 +44,4 @@ export class ProductsComponent {
     nextPage() {
       this.paginaActual++;
       this.cargarProductos();
-}}
+
