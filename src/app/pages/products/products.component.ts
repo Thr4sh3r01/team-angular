@@ -2,11 +2,12 @@ import { ServiceService } from './../../services/service.service';
 
 import { Component } from '@angular/core';
 import { Product } from '../../models/product';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-products',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './products.component.html',
   styleUrl: './products.component.scss',
 })
@@ -43,4 +44,3 @@ export class ProductsComponent {
     this.cargarProductos();
   }
 }
-
