@@ -1,3 +1,4 @@
+
 <div class="principal">
 
 @for (item of ProductsList; track $index) {
@@ -16,9 +17,24 @@
 
 }
 
+<div class="container">
+  @for (item of ProductsList; track $index) {
+  <div class="container">
+    <section class="fotos">
+      <div><img src="{{ item.image }}" alt="foto" /></div>
+      <h1>{{ item.name }}</h1>
+      <p>{{ item.id }}</p>
+      <p>{{ item.description }}</p>
+      <p>{{ item.price }}</p>
+      <p>{{ item.stars }}</p>
+    </section>
+  </div>
+  }
+</div>
+
+
 <div>
   <button (click)="previousPage()">Previous</button>
   <span>Page {{ paginaActual }}</span>
   <button (click)="nextPage()">Next</button>
-
 </div>
