@@ -55,6 +55,7 @@ export class FormComponent {
   borrarProducto(id: string) {
     this.servicio.borrarProducto(id).subscribe(() => {
       console.log('Producto eliminado con éxito');
+      alert('Producto eliminado con éxito');
     });
   }
   editar: boolean = false;
