@@ -1,15 +1,26 @@
-.logo{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.header {
+  padding-top: 38px;
+  box-shadow: inset 0 0 70px 0;
+  background-color: #27AE60;
+  padding-bottom: 25px;
+}
+
+.logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  & img {
+    width: 400px;
+  }
 }
 
 .nav {
-    display: flex;
-    justify-content: center;
-    & __img {
-    height: 200px;
-    width: 200px;
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  padding-top: 40px;
+  & img {
+    height: 12vh
+  }
 }
 
-}

@@ -1,19 +1,8 @@
-// div {
-//   display: flex;
-//   flex-wrap: wrap;
-//   flex-direction: row;
-//   align-content: center;
-//   justify-content: center;
-//   gap: 35px;
-//   div {
-//     display: flex;
-//     flex-direction: column;
-//   }
-// }
 
 .redes {
   padding: 1vh;
-  background-color: #333333;
+  background-color: #27AE60;
+  box-shadow: inset 0 0 70px 0;
 }
 
 .footer2 {
@@ -25,6 +14,7 @@
 .social {
   color: white;
   padding: 10px;
+  font-size: 20px;
 }
 
 .alinear {

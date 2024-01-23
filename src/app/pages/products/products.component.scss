@@ -37,3 +37,20 @@ button.button {
   box-shadow: 5px 0 10px 0;
   color: blue;
 }
+
+.botonProduct{
+background-color: greenyellow;
+}
+
+.botonesproducts{
+  display: flex;
+  width: max-content;
+  height: max-content;
+  font-size: xx-large;
+  font-family: sans-serif;
+  flex-direction: column;
+  position: relative;
+  gap: 14px;
+}
+
+
