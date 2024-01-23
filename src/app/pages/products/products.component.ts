@@ -1,7 +1,8 @@
+import { Product } from './../../models/product';
 import { ServiceService } from './../../services/service.service';
 
 import { Component } from '@angular/core';
-import { Product } from '../../models/product';
+
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -26,8 +27,8 @@ export class ProductsComponent {
   }
 
   cargarProductos() {
-    this.servicio.getProducts(this.paginaActual).subscribe((data: any) => {
-      console.log('Estoy recibiendo producto al paginar', data);
+    this.servicio.getProducts(this.paginaActual, ).subscribe((data: any) => {
+      console.log('Estoy recibiendo producto al paginar pero no tengo paginas en servidor', data);
       this.ProductsList = data;
     });
   }
