@@ -5,13 +5,19 @@
       <button (click)="finalizarEdicion()">Terminar Edicion</button>
 
     </div>
+
+
     <label>
       <input
         type="text"
         placeholder="id"
         [(ngModel)]="Product.id"
         *ngIf="editar"
-      />
+      /><div *ngIf="editar" class="previa">
+      <dd>
+        {{ Product.id }}
+      </dd>
+    </div>
       <input
         type="text"
         placeholder="Nombre"
@@ -21,6 +27,9 @@
       <div *ngIf="Formuralario" style="color: red">
         La {{ Product.name }} es requerida.
       </div>
+      <dd>
+        {{ Product.name }}
+      </dd>
 
       <input
         type="text"
@@ -29,8 +38,11 @@
         required
       />
       <div *ngIf="Formuralario" style="color: red">
-        La {{ Product.description }} es requerida.
+        La {{ Product.name }} es requerida.
       </div>
+      <dd>
+        {{ Product.name }}
+      </dd>
 
       <input
         type="text"
@@ -39,8 +51,11 @@
         required
       />
       <div *ngIf="Formuralario" style="color: red">
-        La {{ Product.price }} es requerida.
+        La {{ Product.name }} es requerida.
       </div>
+      <dd>
+        {{ Product.name }}
+      </dd>
 
       <input
         type="text"
@@ -49,7 +64,7 @@
         required
       />
       <div *ngIf="Formuralario" style="color: red">
-        La {{ Product.image }} es requerida.
+        La {{ Product.name }} es requerida.
       </div>
 
       <input
@@ -58,22 +73,29 @@
         [(ngModel)]="Product.stars"
         required
       />
-      <div *ngIf="Formuralario" style="color: red">
-        La {{ Product.stars }} es requerida.
-      </div>
-    </label>
-    <div class="boton">
-      <button (click)="addProduct()">Registar Producto</button>
-      <button (click)="updateProduct()">Actualizar Producto</button>
-      <button (click)="borrarProducto(Product.id)">Eliminar Producto</button>
-    </div>
 
+    </label>
+
+
+<div class="boton">
+    <button (click)="addProduct()">Registar Producto</button>
+    <button (click)="updateProduct()">Actualizar Producto</button>
+    <button (click)="borrarProducto(Product.id)">Eliminar Producto</button>
+  </div>
   </section>
 
-  <div *ngIf="editar" class="previa">
-    <dd>
-      {{ Product.id }}
-    </dd>
+
+
+</div>
+
+
+  <dd>
+    <img src="{{ Product.image }}" alt="foto" />
+
+
+  </dd>
+
+<!--
     <dd>
       {{ Product.name }}
     </dd>
@@ -94,4 +116,4 @@
   </div>
 
 
-</div>
+</div> -->
