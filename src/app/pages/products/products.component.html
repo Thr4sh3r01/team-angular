@@ -1,16 +1,38 @@
 <div class="principal">
   @for (item of ProductsList; track $index) {
-  <section>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img
+          src="{{ item.image }}"
+          alt="Producto"
+          style="width: 300px; height: 300px"
+        />
+      </div>
+      <div class="flip-card-back">
+        <h1>{{ item.name }}</h1>
+        <p>{{ item.description }}</p>
+        <h3>Precio: {{ item.price }} €</h3>
+        <h3>Puntuación: {{ item.stars }} / 5</h3>
+        <button routerLink="/form">Editar producto</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- <section>
     <div class="fotos">
       <img src="{{ item.image }}" alt="foto" />
       <h1>{{ item.name }}</h1>
       <p>{{ item.description }}</p>
       <p>{{ item.price }}</p>
       <p>{{ item.stars }}</p>
+<<<<<<< HEAD
       <button class="button" routerLink="/form">Editar producto</button>
+=======
+      
+>>>>>>> c9e8fa08c3c61a5db0538c55c01ba9dde78a6462
     </div>
-  </section>
-
+  </section> -->
   }
   <div class="botonesproducts">
     <button class="botonProduct" (click)="previousPage()">Previous</button>
