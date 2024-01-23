@@ -5,10 +5,16 @@
   box-shadow: inset 0 0 70px 0;
 }
 
+.footer1 {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
 .footer2 {
   color: white;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end;
 }
 
 .social {
