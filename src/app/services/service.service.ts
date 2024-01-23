@@ -30,5 +30,11 @@ export class ServiceService {
     return this.http.put(`${this.ProductsUrl}/${id}`, product);
   }
 
+  public borrarProducto(id: string) {
+    return this.http.delete(`${this.ProductsUrl}/${id}`);
+  }
+
+
+
 
 }

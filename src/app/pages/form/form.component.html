@@ -1,24 +1,97 @@
+<div class="gestion">
+  <section>
+    <div class="boton">
+      <button (click)="iniciarEdicion()">Iniciar Edicion</button>
+      <button (click)="finalizarEdicion()">Terminar Edicion</button>
 
-<main>
-<label for="">
-<input type="text" placeholder="id" [(ngModel)]="Product.id">
-<input type="text" placeholder="Nombre" [(ngModel)]="Product.name">
+    </div>
+    <label>
+      <input
+        type="text"
+        placeholder="id"
+        [(ngModel)]="Product.id"
+        *ngIf="editar"
+      />
+      <input
+        type="text"
+        placeholder="Nombre"
+        [(ngModel)]="Product.name"
+        required
+      />
+      <div *ngIf="Formuralario" style="color: red">
+        La {{ Product.name }} es requerida.
+      </div>
 
-<input type="text" placeholder="Descripcion" [(ngModel)]="Product.description">
+      <input
+        type="text"
+        placeholder="Descripcion"
+        [(ngModel)]="Product.description"
+        required
+      />
+      <div *ngIf="Formuralario" style="color: red">
+        La {{ Product.description }} es requerida.
+      </div>
+
+      <input
+        type="text"
+        placeholder="Precio"
+        [(ngModel)]="Product.price"
+        required
+      />
+      <div *ngIf="Formuralario" style="color: red">
+        La {{ Product.price }} es requerida.
+      </div>
+
+      <input
+        type="text"
+        placeholder="Imagen URL"
+        [(ngModel)]="Product.image"
+        required
+      />
+      <div *ngIf="Formuralario" style="color: red">
+        La {{ Product.image }} es requerida.
+      </div>
+
+      <input
+        type="text"
+        placeholder="Estrella"
+        [(ngModel)]="Product.stars"
+        required
+      />
+      <div *ngIf="Formuralario" style="color: red">
+        La {{ Product.stars }} es requerida.
+      </div>
+    </label>
+    <div class="boton">
+      <button (click)="addProduct()">Registar Producto</button>
+      <button (click)="updateProduct()">Actualizar Producto</button>
+      <button (click)="borrarProducto(Product.id)">Eliminar Producto</button>
+    </div>
+
+  </section>
+
+  <div *ngIf="editar" class="previa">
+    <dd>
+      {{ Product.id }}
+    </dd>
+    <dd>
+      {{ Product.name }}
+    </dd>
+    <dd>
+      {{ Product.description }}
+    </dd>
+    <dd>
+      {{ Product.price }}
+    </dd>
+
+    <dd>
+      <img src="{{ Product.image }}" alt="foto" />
+    </dd>
+
+    <dd>
+      {{ Product.stars }}
+    </dd>
+  </div>
 
 
-<input type="text" placeholder="Precio" [(ngModel)]="Product.price">
-
-
-<input type="text" placeholder="Imagen" [(ngModel)]="Product.image">
-
-<input type="text" placeholder="Estrella" [(ngModel)]="Product.stars">
-
-
-<div class="boton">
-<button  (click)="addProduct()">ENVIAR DATOS</button>
-<button  (click)="updateProduct()">ACTUALIZAR DATOS</button>
 </div>
-
-</label>
-</main>
