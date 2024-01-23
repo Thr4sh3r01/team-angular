@@ -71,6 +71,7 @@
   </section>
 
   <div *ngIf="editar" class="previa">
+    <div>
     <dd>
       {{ Product.id }}
     </dd>
@@ -83,6 +84,7 @@
     <dd>
       {{ Product.price }}
     </dd>
+  </div>
 
     <div class="foto">
       <img src="{{ Product.image }}" alt="foto" />
