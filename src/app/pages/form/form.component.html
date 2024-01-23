@@ -6,7 +6,6 @@
 
     </div>
 
-
     <label>
       <input
         type="text"
@@ -76,7 +75,6 @@
 
     </label>
 
-
 <div class="boton">
     <button (click)="addProduct()">Registar Producto</button>
     <button (click)="updateProduct()">Actualizar Producto</button>
@@ -84,18 +82,17 @@
   </div>
   </section>
 
-
+  <div *ngIf="editar" class="previa">
+    <div>
+    <dd>
+      {{ Product.id }}
+    </dd>
 
 </div>
 
-
   <dd>
     <img src="{{ Product.image }}" alt="foto" />
-
-
   </dd>
-
-<!--
     <dd>
       {{ Product.name }}
     </dd>
@@ -105,6 +102,7 @@
     <dd>
       {{ Product.price }}
     </dd>
+  </div>
 
     <div class="foto">
       <img src="{{ Product.image }}" alt="foto" />
@@ -116,4 +114,4 @@
   </div>
 
 
-</div> -->
+</div> 
