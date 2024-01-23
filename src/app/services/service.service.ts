@@ -11,9 +11,10 @@ export class ServiceService {
   public ProductsUrl:string=`${this.baseUrl}/Products`
 
   constructor(private http:HttpClient) {}
-  public getProducts(page:number){
-    const apiUrl = `${this.ProductsUrl}?page=${page}`;
-    return this.http.get(this.ProductsUrl)
+  public getProducts(page: number, limit: number = 10){
+    const apiUrl = `${this.ProductsUrl}?page=${page}&limit=${limit}`;
+    console.log('API URL:', apiUrl);//que pasa
+    return this.http.get(apiUrl)
   }
 
   public getProductsId(id:string){
