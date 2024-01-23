@@ -1,36 +1,30 @@
-<<<<<<< HEAD
-.redes {
-    padding: 1vh;
-    background-color: #333333;
+.principal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  gap: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-.footer2 {
-    color: white;
-    display: flex;
-    justify-content: space-evenly;
-}
+section {
+  height: 440px;
 
-a {
-    color: white;
-    padding: 10px;
-}
+  max-width: 20vw;
+  min-width: 20vw;
 
-.alinear {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-=======
-.principal{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 100%;
-}
+  border: 2px solid lightgrey;
+  border-radius: 5%;
 
+
+  padding: 10px;
+  align-items: center;
+}
 
 img {
-    width: 200px;
-    height: 200px;
->>>>>>> 2b6935df18e50f14ea7190cfb3b3870082e44495
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
 }

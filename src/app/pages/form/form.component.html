@@ -1,8 +1,24 @@
-<input type="text" placeholder="name" [(ngModel)]="Product.name">
-<input type="text" placeholder="price" [(ngModel)]="Product.price">
-<input type="text" placeholder="description" [(ngModel)]="Product.description">
-<input type="text" placeholder="stars" [(ngModel)]="Product.stars">
-<input type="text" placeholder="image" [(ngModel)]="Product.image">
+
+<main>
+<label for="">
 <input type="text" placeholder="id" [(ngModel)]="Product.id">
+<input type="text" placeholder="Nombre" [(ngModel)]="Product.name">
+
+<input type="text" placeholder="Descripcion" [(ngModel)]="Product.description">
+
+
+<input type="text" placeholder="Precio" [(ngModel)]="Product.price">
+
+
+<input type="text" placeholder="Imagen" [(ngModel)]="Product.image">
+
+<input type="text" placeholder="Estrella" [(ngModel)]="Product.stars">
+
+
+<div class="boton">
 <button  (click)="addProduct()">ENVIAR DATOS</button>
 <button  (click)="updateProduct()">ACTUALIZAR DATOS</button>
+</div>
+
+</label>
+</main>
