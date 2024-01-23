@@ -44,4 +44,10 @@ export class ProductsComponent {
     this.paginaActual++;
     this.cargarProductos();
   }
+
 }
+
+
+
+
+
