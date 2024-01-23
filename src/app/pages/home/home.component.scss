@@ -1,5 +1,10 @@
 .titulo {
+
   font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic,
+    "AppleGothic", sans-serif;
+
   font-size: 20px;
   text-align: center;
   text-transform: uppercase;
@@ -16,4 +21,13 @@
   margin-left: 200px;
   margin-right: 200px;
   text-align: justify;
+  letter-spacing: 0.15em;
+  text-shadow: 1px -1px 0 #767676, -1px 2px 1px #737272, -2px 4px 1px #767474;
+}
+
+.resumen {
+  margin: 0 auto;
+  max-width: 65vw;
+  text-align: justify;
+  line-height: 1.5;
 }
