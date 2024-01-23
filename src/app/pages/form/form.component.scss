@@ -1,0 +1,63 @@
+*{box-sizing:border-box;}
+section{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  font-family: sans-serif;
+
+
+}
+
+form{
+
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+	background-color:#ccc;
+}
+
+label{
+	display: flex;
+    width: max-content;
+    font-weight: bold;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+
+input{
+  font-size: 17px;
+
+  padding: 1px 8px;
+  border-radius: 9px;
+  background-color: #f6f6f6;
+  margin: 6px 0;
+
+}
+
+
+
+
+button{
+
+  padding: 5px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+.gestion{
+
+    align-items: flex-end;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+

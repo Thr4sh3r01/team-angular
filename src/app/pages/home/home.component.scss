@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -31,4 +32,23 @@
     flex: 100%;
     max-width: 100%;
   }
+=======
+.titulo {
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+
+  letter-spacing: .15em;
+  text-shadow:
+    1px -1px 0 #767676,
+    -1px 2px 1px #737272,
+    -2px 4px 1px #767474,
+}
+
+.resumen {
+  margin: 0 auto;
+  max-width: 65vw;
+  text-align: justify;
+  line-height: 1.5;
+>>>>>>> 3414ec12e3a487a916b2e538e08d5551a30bcc21
 }
