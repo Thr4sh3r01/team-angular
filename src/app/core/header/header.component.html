@@ -1,8 +1,17 @@
 <header class="header">
-<div class="logo">
+<!-- <div class="logo">
   <img src="../../../assets/img/logo.png" alt="logo" />
+</div> -->
+
+<div class="icon-bar">
+  <a class="active" href="#"><i class="fa fa-home"></i>
+  <a [routerLink]="['/form']" roouterLinkActive="roouter-link-active"><i class="fa fa-search">Gestion</i></a>
+  <a [routerLink]="['']" roouterLinkActive="roouter-link-active"><i class="fa fa-envelope">Home</i></a>
+  <a [routerLink]="['/products']" roouterLinkActive="roouter-link-active"><i class="fa fa-globe">Productos</i></a>
+</a>
 </div>
 
+<!--
 <div class="nav">
 <div>
   <a [routerLink]="['']" roouterLinkActive="roouter-link-active">
@@ -26,6 +35,6 @@
 </div>
 
 
-</div>
+</div> -->
 
-</header>
+

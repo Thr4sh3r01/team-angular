@@ -24,7 +24,7 @@
         required
       />
       <div *ngIf="Formuralario" style="color: red">
-        La {{ Product.name }} es requerida.
+        El Campo es requerida.
       </div>
       <dd>
         {{ Product.name }}
@@ -37,10 +37,10 @@
         required
       />
       <div *ngIf="Formuralario" style="color: red">
-        La {{ Product.name }} es requerida.
+        El Campo es requerida.
       </div>
       <dd>
-        {{ Product.name }}
+        {{ Product.description }}
       </dd>
 
       <input
@@ -50,10 +50,10 @@
         required
       />
       <div *ngIf="Formuralario" style="color: red">
-        La {{ Product.name }} es requerida.
+        El Campo es requerida.
       </div>
       <dd>
-        {{ Product.name }}
+        {{ Product.price }}
       </dd>
 
       <input
@@ -63,7 +63,7 @@
         required
       />
       <div *ngIf="Formuralario" style="color: red">
-        La {{ Product.name }} es requerida.
+        El Campo es requerida.
       </div>
 
       <input
@@ -72,6 +72,9 @@
         [(ngModel)]="Product.stars"
         required
       />
+      <dd>
+        {{ Product.stars }}
+      </dd>
 
     </label>
 
@@ -90,9 +93,9 @@
 
 </div>
 
-  <dd>
+  <!-- <dd>
     <img src="{{ Product.image }}" alt="foto" />
-  </dd>
+  </dd> -->
     <dd>
       {{ Product.name }}
     </dd>
@@ -105,13 +108,11 @@
   </div>
 
     <div class="foto">
-      <img src="{{ Product.image }}" alt="foto" />
+      <img class="todo"  src="{{ Product.image }}" alt="foto" />
     </div>
 
-    <dd>
-      {{ Product.stars }}
-    </dd>
+
   </div>
 
 
-</div> 
+
