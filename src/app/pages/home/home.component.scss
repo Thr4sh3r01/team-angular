@@ -1,19 +1,145 @@
+$color_1: #1E592D;
+$color_2: grey;
+$color_3: white;
+$font-family_1: roboto;
 
-.titulo {
-  font-size: 20px;
-  text-align: center;
-  text-transform: uppercase;
 
-  letter-spacing: .15em;
-  text-shadow:
-    1px -1px 0 #767676,
-    -1px 2px 1px #737272,
-    -2px 4px 1px #767474,
+section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    //background:url("../../../assets/img/background.jpg");
+    background-color: #29793d;
+    box-shadow: inset 0 0 70px 0;
+    overflow: hidden;
+  
+
+  
+  
+  .card {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 80px;
+    grid-template-areas: "image" "text" "stats";
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family: $font-family_1;
+    text-align: center;
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin: 30px;
+    &:hover {
+        transform: scale(1.15);
+        box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+    }
+     
+  }
+
+  .card-text {
+    grid-area: text;
+    margin: 25px;
+    .date {
+        color: $color_1;
+        font-size: 13px;
+    }
+    p {
+        color: $color_2;
+        font-size: 15px;
+        font-weight: 300;
+    }
+    h2 {
+        margin-top: 0px;
+        font-size: 28px;
+    }
+  }
+  .card-stats {
+    grid-area: stats;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: #94EA8B;
+  .stat {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: $color_3;
+  }
+  .border {
+      border-left: 1px solid rgb(172, 26, 87);        border-right: 1px solid rgb(172, 26, 87);
+    }
+  .value {
+      font-size: 22px;
+      font-weight: 500;
+        sup {
+          font-size: 12px;
+        }
+    }
+    .type {
+      font-size: 11px;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+  }
+
+  .card-text.card2 {
+    .date {
+        color: $color_1;
+    }
+  }
+
+  .card-stats.card2 {
+    .border {
+        border-left: 1px solid rgb(185, 67, 20);
+        border-right: 1px solid rgb(185, 67, 20);
+    }
+    background: #94EA8B;
+  }
+
+  .card-text.card3 {
+    .date {
+        color: $color_1;
+    }
+  }
+
+  .card-stats.card3 {
+    .border {
+        border-left: 1px solid rgb(14, 122, 50);
+        border-right: 1px solid rgb(14, 122, 50);
+    }
+    background: #94EA8B;
+
+  }
+
+  .card-image {
+    grid-area: image;
+    background: url("../../../assets/img/img1.jpg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+  }
+
+  .card-image.card2 {
+    background: url("../../../assets/img/img2.jpg");
+    background-size: cover;
+  }
+
+  .card-image.card3 {
+    background: url("../../../assets/img/img3.jpg");
+    background-size: cover;
+  }
+
 }
 
-.resumen {
-  margin: 0 auto;
-  max-width: 65vw;
-  text-align: justify;
-  line-height: 1.5;
-}
+
+
+
+
+
+
